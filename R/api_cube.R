@@ -1696,10 +1696,10 @@ NULL
         multicores = multicores
     )
     # Prepare parallel processing
-    .parallel_start(
-        workers = multicores, log = FALSE
-    )
-    on.exit(.parallel_stop(), add = TRUE)
+    if (is.null(sits_env[["cluster"]])) {
+        .parallel_start(workers = multicores)
+        on.exit(.parallel_stop(), add = TRUE)
+    }
     # Extract unique values from all tiles
     tile_values <- slider::slide(cube, function(tile) {
         # Generate tile chunks
@@ -1723,7 +1723,7 @@ NULL
             # Sample raster
             unique(
                 .raster_values_mem(
-                    chunk_raster,
+                    chunk_raster
                 )
             )
         }, progress = FALSE)

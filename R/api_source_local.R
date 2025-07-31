@@ -656,6 +656,7 @@
         .parallel_start(workers = multicores)
         on.exit(.parallel_stop(), add = TRUE)
     }
+
     # do parallel requests
     results_lst <- .parallel_map(seq_len(nrow(items)), function(i) {
         item <- items[i, ]
