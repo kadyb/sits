@@ -1726,7 +1726,7 @@ NULL
                     chunk_raster
                 )
             )
-        }, progress = FALSE)
+        }, progress = TRUE)
         # Return unique values
         unique(unlist(tile_values))
     })
