@@ -1558,6 +1558,29 @@ NULL
 .cube_is_token_expired.default <- function(cube) {
     FALSE
 }
+#' @title Check if cube requires GDAL Auth
+#' @name .cube_uses_gdal_auth
+#' @keywords internal
+#' @noRd
+#' @param  cube input data cube
+#' @param  ...  additional parameters for httr package
+#'
+#' @return bool indicating whether the cube requires GDAL authentication.
+.cube_uses_gdal_auth <- function(cube) {
+    UseMethod(".cube_uses_gdal_auth", cube)
+}
+#' @export
+.cube_uses_gdal_auth.hls_cube <- function(cube) {
+    TRUE
+}
+#' @export
+.cube_uses_gdal_auth.cdse_cube <- function(cube) {
+    TRUE
+}
+#' @export
+.cube_uses_gdal_auth.default <- function(cube) {
+    FALSE
+}
 #' @title Split the cube by tiles and bands
 #' @name .cube_split_tiles_bands
 #' @keywords internal
