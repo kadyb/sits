@@ -69,11 +69,11 @@ using \code{\link[sits]{sits_tuning}}.
 
 This function is based on the paper by Vivien Garnot referenced below
 and code available on github at
-https://github.com/VSainteuf/pytorch-psetae.
+\url{https://github.com/VSainteuf/pytorch-psetae}.
 
 We also used the code made available by Maja Schneider in her work with
 Marco Körner referenced below and available at
-https://github.com/maja601/RC2020-psetae.
+\url{https://github.com/maja601/RC2020-psetae}.
 
 If you use this method, please cite Garnot's and Schneider's work.
 }

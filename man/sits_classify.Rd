@@ -94,7 +94,7 @@ SITS supports the following models:
 }
 
    Please refer to the sits documentation available in
-   <https://e-sensing.github.io/sitsbook/> for detailed examples.
+   \url{https://e-sensing.github.io/sitsbook/} for detailed examples.
 }
 \author{
 Rolf Simoes, \email{rolfsimoes@gmail.com}

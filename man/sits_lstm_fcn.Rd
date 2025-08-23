@@ -82,7 +82,7 @@ LSTM with FCN paper.
 
 The torch version is based on the code made available by the titu1994.
 The original python code is available at the website
-https://github.com/titu1994/LSTM-FCN. This code is licensed as GPL-3.
+\url{https://github.com/titu1994/LSTM-FCN}. This code is licensed as GPL-3.
 }
 \references{
 F. Karim, S. Majumdar, H. Darabi and S. Chen,

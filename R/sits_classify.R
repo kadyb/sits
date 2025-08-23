@@ -79,7 +79,7 @@
 #' }
 #'
 #'    Please refer to the sits documentation available in
-#'    <https://e-sensing.github.io/sitsbook/> for detailed examples.
+#'    \url{https://e-sensing.github.io/sitsbook/} for detailed examples.
 #'
 #' @export
 sits_classify <- function(data, ml_model, ...) {
@@ -553,7 +553,7 @@ sits_classify.raster_cube <- function(data,
 #'    conflicts.
 #'
 #'    Please refer to the sits documentation available in
-#'    <https://e-sensing.github.io/sitsbook/> for detailed examples.
+#'    \url{https://e-sensing.github.io/sitsbook/} for detailed examples.
 #' @examples
 #' if (sits_run_examples()) {
 #'     # train a random forest model

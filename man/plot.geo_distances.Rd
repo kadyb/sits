@@ -20,10 +20,6 @@ A plot showing the sample-to-sample distances
 \description{
 Make a kernel density plot of samples distances.
 }
-\note{
-Please refer to the sits documentation available in
-<https://e-sensing.github.io/sitsbook/> for detailed examples.
-}
 \examples{
 if (sits_run_examples()) {
     # read a shapefile for the state of Mato Grosso, Brazil
